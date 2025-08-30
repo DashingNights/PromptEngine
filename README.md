@@ -16,7 +16,15 @@ A configurable template engine for processing prompt files with variable substit
 ### As a Standalone Package
 
 ```bash
-npm install deepnpc-prompt-engine
+# Build first
+cd PromptEngine
+npm run build
+
+# Install from another project
+cd /path/to/your/other/project
+npm install ../path/to/PromptEngine
+# or with absolute path
+npm install /absolute/path/to/PromptEngine
 ```
 
 ### For Development or Integration
