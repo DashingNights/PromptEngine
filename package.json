@@ -1,0 +1,41 @@
+{
+  "name": "deepnpc-prompt-engine",
+  "version": "1.0.0",
+  "description": "A configurable template engine for processing prompt files with variable substitution, designed for integration into the DeepNPC project",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/**/*",
+    "src/**/*",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "clean": "rimraf dist",
+    "dev": "tsc --watch",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node dist/index.js",
+    "example": "npm run build && node dist/example.js",
+    "prepublishOnly": "npm run clean && npm run build"
+  },
+  "keywords": [
+    "template",
+    "engine",
+    "prompt",
+    "variable",
+    "substitution",
+    "deepnpc",
+    "typescript"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^24.3.0",
+    "rimraf": "^5.0.10",
+    "typescript": "^5.9.2"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
