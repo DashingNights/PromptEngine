@@ -37,7 +37,7 @@ npm install /absolute/path/to/PromptEngine
 ## Quick Start
 
 ```typescript
-import { TemplateEngine, createDefaultVariableDefinitions } from 'deepnpc-prompt-engine';
+import { TemplateEngine, createDefaultVariableDefinitions } from 'PromptEngine';
 
 // Create and initialize the engine
 const engine = new TemplateEngine({
@@ -118,7 +118,7 @@ Refresh the prompt cache.
 Utility class for managing variable definitions.
 
 ```typescript
-import { VariableDefinitions } from 'deepnpc-prompt-engine';
+import { VariableDefinitions } from 'PromptEngine';
 
 const vars = new VariableDefinitions();
 vars.setVariable('{{player_name}}', 'Alice');
@@ -138,7 +138,7 @@ Create and initialize a TemplateEngine in one step.
 ### Basic Usage
 
 ```typescript
-import { TemplateEngine, createDefaultVariableDefinitions } from 'deepnpc-prompt-engine';
+import { TemplateEngine, createDefaultVariableDefinitions } from 'PromptEngine';
 
 // Create variable definitions
 const variableDefinitions = createDefaultVariableDefinitions().getVariableMap();
@@ -217,7 +217,7 @@ const result = await engine.processTemplate("NPC_PROMPT.txt", dynamicVars);
 ### Custom Configuration
 
 ```typescript
-import { TemplateEngine, VariableDefinitions } from 'deepnpc-prompt-engine';
+import { TemplateEngine, VariableDefinitions } from 'PromptEngine';
 
 // Create custom variables
 const vars = new VariableDefinitions();
@@ -237,7 +237,7 @@ await engine.initialize();
 ### Error Handling
 
 ```typescript
-import { TemplateEngine, TemplateEngineError, TemplateEngineErrorType } from 'deepnpc-prompt-engine';
+import { TemplateEngine, TemplateEngineError, TemplateEngineErrorType } from 'PromptEngine';
 
 try {
   const result = await engine.processTemplate('missing-file.txt');
@@ -259,7 +259,7 @@ try {
 
 ```typescript
 // In your main application
-import { createAndInitializeTemplateEngine, TemplateEngine } from 'deepnpc-prompt-engine';
+import { createAndInitializeTemplateEngine, TemplateEngine } from 'PromptEngine';
 
 class MyApplication {
   private promptEngine: TemplateEngine;
@@ -316,7 +316,7 @@ const result = await replaceVariablesInPrompt('NPC_PROMPT.txt');
 
 **New way:**
 ```typescript
-import { TemplateEngine } from 'deepnpc-prompt-engine';
+import { TemplateEngine } from 'PromptEngine';
 const engine = new TemplateEngine(config);
 await engine.initialize();
 const result = await engine.processTemplate('NPC_PROMPT.txt');
