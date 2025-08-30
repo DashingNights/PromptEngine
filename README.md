@@ -334,4 +334,4 @@ This will demonstrate all the main features of the template engine using the sam
 
 ## License
 
-ISC
+Apache License 2.0
